@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Icon Template Percentage</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js">
+
+        </script>
+        <style>
+            body {background-color: black;}
+            .row{
+                margin-top:40px;
+            }
+            .left-column{
+                float:left;
+                width:30%;
+                margin-left:30px;
+            }
+            .center-column{
+                width:30%;
+                margin:auto;
+            }
+            .right-column{
+                float:right;
+                width:30%;
+                margin:auto;
+            }
+            .image-container{
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="Takeda" src="img/Takeda3@2x.png" height="200" width="250"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="Hosokawa" src="img/Hosokawa.png" height="200" width="250"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="Hojo" src="img/Hojo.png" height="200" width="250"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="Amako" src="img/Amako.png" height="200" width="250"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="Tokugawa" src="img/Tokugawa.png" height="200" width="250"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="Munechika" src="img/Munechika.png" height="200" width="250"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="Miyoshi" src="img/Miyoshi.png" height="200" width="250"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="Asakura" src="img/Asakura.png" height="200" width="250"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="Sanada" src="img/Sanada.png" height="200" width="250"/></div></div>
+        </div>
+        
+
+        <script>
+            const sound1 = new buzz.sound ("sound/Takeda_Sound.wav")
+            const sound2 = new buzz.sound ("sound/Hosokawa_Sound.wav")
+            const sound3 = new buzz.sound ("sound/Hojo_Sound.wav")
+            const sound4 = new buzz.sound ("sound/Amako_Sound.wav")
+            const sound5 = new buzz.sound ("sound/Tokugawa_Sound.wav")
+            const sound6 = new buzz.sound ("sound/Munechika_Sound.wav")
+            const sound7 = new buzz.sound ("sound/Miyoshi_Sound.wav")
+            const sound8 = new buzz.sound ("sound/Asakura_Sound.wav")
+            const sound9 = new buzz.sound ("sound/Sanada_Sound.wav")
+
+            window.onload = () => {
+
+                document.getElementById ("Takeda")
+                    .onpointerdown = () => {
+                        console.log (sound1)
+                        sound1.play ()
+                    }
+
+                document.getElementById ("Hosokawa")
+                    .onpointerdown = () => {
+                        console.log (sound2.getDuration ())
+                        sound2.play ()
+                    }
+
+                    document.getElementById ("Hojo")
+                    .onpointerdown = () => {
+                        console.log (sound3)
+                        sound3.play () 
+                    }
+
+                    document.getElementById ("Amako")
+                    .onpointerdown = () => {
+                        console.log (sound4)
+                        sound4.play ()   
+                    } 
+
+                    document.getElementById ("Tokugawa")
+                    .onpointerdown = () => {
+                        console.log (sound5)
+                        sound5.play ()   
+                    } 
+
+                    document.getElementById ("Munechika")
+                    .onpointerdown = () => {
+                        console.log (sound6)
+                        sound6.play ()   
+                    } 
+
+                    document.getElementById ("Miyoshi")
+                    .onpointerdown = () => {
+                        console.log (sound7)
+                        sound7.play ()   
+                    } 
+
+                    document.getElementById ("Asakura")
+                    .onpointerdown = () => {
+                        console.log (sound8)
+                        sound8.play ()   
+                    } 
+
+                    document.getElementById ("Sanada")
+                    .onpointerdown = () => {
+                        console.log (sound9)
+                        sound9.play ()   
+                    } 
+        }
+        </script>
+
+    </body>
+    
+</html>
